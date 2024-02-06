@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+.nav{
+    /* border: 1px solid black; */
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav .linkdin a{
+   text-decoration: none;
+}
+.nav img{
+    height: 25px;
+}
+
+#myName{
+    font-size: 25px;
+    color: #8DA242;
+    /* font-weight: bold; */
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 25px;
+    margin: 5px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.selected{
+    border-bottom: 2px solid #8DA242;
+}
+
+.nav ul li a:hover{
+    color: #8DA242;
+    font-size: 1.02rem;
+}
+
+.box{
+    display: flex;
+    gap: 5px;
+}
+
+.box .boxLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    width: 55vw;
+    height: 60vh;
+    gap: 3px;
+}
+
+.boxLeft .btnResume{
+    background-color: #8DA242;
+    padding: 10px 20px;
+    border-style: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.btnResume:hover{
+    transform: scale(1.02);
+}
+
+.firstLine, .secondLine{
+    font-size: 30px;
+}
+
+#firstName, #element{
+    color: #8DA242;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+
+.boxRight {
+    /* border: 1px solid black; */
+    width: 600px;
+    height: 400px;
+    margin: 30px 0px;
+    overflow: hidden;
+}
+
+.imgcontainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.imgcontainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+    transition: opacity 0.5s ease; 
+}
+
+.education{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.myEducation{
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.education .eduCard{
+    width: 60vw;
+    height: 30px;
+    background-image: linear-gradient(92.88deg,#8DA242 9.16%,#A7BC5B 43.89%,#8DA242 64.72%)!important;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.eduCard:hover{
+    transform: scale(1.05);
+}
+
+.eduCard .collegeName, .duration{
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 3px;
+}
+
+.eduCard .branch, .place{
+    font-size: 15px;
+    padding: 3px;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.myProjects{
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.projectCard{
+    width: 400px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8DA242;
+    border-radius: 10px;
+    box-shadow: 0 0px 10px rgba(128, 128, 128, 0.9);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.projectCard:hover{
+    transform: scale(1.06);
+}
+
+.proCard1 {
+    text-align: center;
+}
+
+.proCard1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.projectDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 3px;
+}
+
+.projectDetails .projectName{
+    font-size: 28px;
+    font-weight: bolder
+}
+
+.projectDetails .projectType{
+    font-size: 18px;
+}
+
+.codingProfiles{
+    font-size: 55px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.circular-card {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.224);
+    transition: transform 0.3s ease; 
+    border: 5px solid #8DA242;
+}
+
+.circular-card:hover {
+    transform: scale(1.1); 
+}
+
+.circular-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profilesContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    margin-top: 20px;
+}
+
+.profilesContainer .profile1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.contact{
+    width: 100vw;
+    height: 300px;
+    background-color: #8DA242;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    gap: 5px;
+}
+
+.contact .footerText{
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.contact .footerText1{
+    font-size: 25px;
+    font-weight: bold;
+}
+.contact a{
+    color: white;
+    font-size: 23px;
+}
+
+@media screen and (max-width:1100px){
+    .box .boxLeft{
+        width: 55vw;
+        height: 35vh;
+    }
+}
+
+@media screen and (max-width:950px) {
+
+    .nav{
+        width: 90vw;
+    }
+    
+    .box .boxLeft{
+        width: 55vw;
+        height: 35vh;
+        margin: 0px 0px 0px 20px;
+    }
+    .eduCard .collegeName, .duration{
+        font-size: 20px;
+        font-weight: bolder;
+        padding: 3px;
+    }
+    
+    .eduCard .branch, .place{
+        font-size: 11px;
+        padding: 3px;
+    }
+}
+
+@media screen and (max-width:710px) {
+
+    .nav{
+        width: 90vw;
+        font-size: 15px;
+    }
+
+    .nav ul{
+        gap: 5px;
+    }
+
+    .nav img{
+        height: 15px;
+    }
+    
+    #myName{
+        font-size: 15px;
+        color: #8DA242;
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .box .boxLeft{
+        width: 55vw;
+        height: 35vh;
+    }
+
+    .firstLine, .secondLine{
+        font-size: 20px;
+    }
+    
+    #firstName, #element{
+        color: #8DA242;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    
+    .btnResume{
+        margin-top: 10px;
+        padding: 3px;
+        font-weight: 100;
+        font-size: 10px;
+    }
+
+
+    .eduCard .collegeName, .duration{
+        font-size: 17px;
+        padding: 3px;
+    }
+    
+    .eduCard .branch, .place{
+        font-size: 11px;
+        padding: 3px;
+    }
+    
+    .contact .footerText{
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    
+    .contact .footerText1{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .contact a{
+        color: white;
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width:430px) {
+
+    .nav{
+        width: 100vw;
+        justify-content: space-around;
+    }
+    .nav ul{
+        font-size: 10px;
+        gap: 5px;
+        padding: 5px;
+    }
+
+    .nav img{
+        height: 11px;
+    }
+    
+    #myName{
+        font-size: 10px;
+        color: #8DA242;
+    }
+
+    .box .boxLeft{
+        width: 55vw;
+        height: 35vh;
+    }
+
+    .eduCard .collegeName, .duration{
+        font-size: 14px;
+        padding: 3px;
+    }
+    
+    .eduCard .branch, .place{
+        font-size: 10px;
+        padding: 3px;
+    }
+
+    .projectCard{
+        width: 360px;
+        height: 280px;
+    }
+
+    .myProjects{
+        font-size: 40px;
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .myEducation{
+        font-size: 40px;
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .codingProfiles{
+        font-size: 38px;
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .contact .footerText{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    
+    .contact .footerText1{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .contact a{
+        color: white;
+        font-size: 12px;
+    }
+}

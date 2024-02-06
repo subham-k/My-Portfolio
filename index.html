@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Subham - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="home"  class="nav">
+        <ul>
+            <li class="selected" onclick="changeColor(this)"><a href="">Home</a></li>
+            <li><a href="#educations" onclick="changeColor(this)">Education</a></li>
+            <li><a href="#project" onclick="changeColor(this)">Projects</a></li>
+            <li><a href="#profile" onclick="changeColor(this)">Profiles</a></li>
+            <li><a href="#contacts" onclick="changeColor(this)">Contact</a></li>
+        </ul>
+
+        <div class="linkdin">
+
+            <a href="https://www.linkedin.com/in/subham-kumar-7a6803209"><span id="myName">Subham_</span>
+                <img src="linkedin.svg" alt="linkdin"></a>
+        </div>
+
+    </div>
+
+    <!-- srcpit for nav -->
+    <script>
+        function changeColor(link) {
+            document.querySelectorAll('a').forEach(function (el) {
+                el.parentElement.classList.remove('selected');
+            });
+
+            link.parentElement.classList.add('selected');
+        }
+    </script>
+
+
+    <div class="box">
+        <div class="boxLeft">
+            <div class="text">
+                <span class="firstLine">Hello, My name is </span>
+                <span id="firstName">Subham</span>
+                <div class="secondLine">and I am a Passionated about,</div>
+                <div class="lastLine"><span id="element"></span></div>
+                <button class="btnResume" onclick="downloadResume()">Download Resume</button>
+            </div>
+            
+        </div>
+        <div class="boxRight">
+            <div class="imgcontainer">
+                <img id="changingImage" src="img2.jpg" alt="img1">
+            </div>
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['DSA- Problem solving.', 'Programming Languages.', 'Web devlopment.', 'Android Devlopment.'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <div id="educations" class="myEducation">My Education</div>
+
+    <div class="education">
+       
+        <div class="eduCard cool">
+            <div class="cardLeft">
+                <div class="collegeName">Chandigarh Engineering College</div>
+                <div class="branch">B.Tech - Information Technology</div>
+            </div>
+            <div class="cardRight">
+                <div class="duration">2021-25</div>
+                <div class="place">Mohali, Punjab</div>
+            </div>
+        </div>
+
+        <div class="eduCard cool">
+            <div class="cardLeft">
+                <div class="collegeName">Kendriya Vidyalaya</div>
+                <div class="branch">Intermediate - CBSE</div>
+            </div>
+            <div class="cardRight">
+                <div class="duration">2018-19</div>
+                <div class="place">Kota, Rajasthan</div>
+            </div>
+        </div>
+
+        <div class="eduCard cool">
+            <div class="cardLeft">
+                <div class="collegeName">Kendriya Vidyalaya</div>
+                <div class="branch">Matriculation - CBSE</div>
+            </div>
+            <div class="cardRight">
+                <div class="duration">2016-17</div>
+                <div class="place">Kota, Rajasthan</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project" class="myProjects">Projects</div>
+
+    <div class="projects">
+        <div class="projectCard">
+            <div class="proCard1">
+                <img src="sc1.jpg" alt="netflix">
+                <div class="projectDetails">
+                    <div class="projectName">Netflix Clone</div>
+                    <div class="projectType">Web Devlopment</div>
+                </div>
+            </div>
+        </div>
+        <div class="projectCard">
+            <div class="proCard1">
+                <img src="sc3.jpg" alt="Portfolio">
+                <div class="projectDetails">
+                    <div class="projectName">Portfolio Site</div>
+                    <div class="projectType">Web Devlopment</div>
+                </div>
+            </div>
+        </div>
+        <div class="projectCard">
+            <div class="proCard1">
+                <img src="sc2.jpg" alt="spotify">
+                <div class="projectDetails">
+                    <div class="projectName">Spotify Clone</div>
+                    <div class="projectType">Web Devlopment</div>
+                </div>
+            </div>
+        </div>
+        <div class="projectCard">
+            <div class="proCard1">
+                <img src="sc5.jpg" alt="spotify">
+                <div class="projectDetails">
+                    <div class="projectName">Pedometer App</div>
+                    <div class="projectType">Android Devlopment</div>
+                </div>
+            </div>
+        </div>
+        <div class="projectCard">
+            <div class="proCard1">
+                <img src="sc4.jpg" alt="spotify">
+                <div class="projectDetails">
+                    <div class="projectName">PTU Student App</div>
+                    <div class="projectType">Android Devlopment</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="profile" class="codingProfiles">Coding Profiles</div>
+
+    <div class="profilesContainer">
+        <div class="profile1">
+            <div class="circular-card">
+              <a href="https://auth.geeksforgeeks.org/user/subhamkumar5375/">  <img src="gfg.jpeg" alt="Image"> </a>
+            </div>
+            <div class="profileName">Geeks for Geeks</div>
+        </div>
+        
+        <div class="profile1">
+            <div class="circular-card">
+               <a href="https://leetcode.com/subhamkumar75/"> <img src="leetcode.jpeg" alt="Image"></a>
+            </div>
+            <div class="profileName">Leetcode</div>
+        </div>
+        
+        <div class="profile1">
+            <div class="circular-card">
+               <a href="https://www.hackerrank.com/profile/kumar_subham"> <img src="hackerrank.jpeg" alt="Image"></a>
+            </div>
+            <div class="profileName">HackerRank</div>
+        </div>
+        
+    </div>
+
+    <div id="contacts" class="contact">
+        <div class="footerText">Available for opportunities</div>
+        <div class="footerText1">Let's Connect</div>
+        <div class="mail"><a href="mailto:subhamkumar5375@gmail.com">subhamkumar5375@gmail.com</a></div>
+        <div class="connectLinkdin"><a href="https://www.linkedin.com/in/subham-kumar-7a6803209">Linkdin</a></div>
+    </div>
+
+    <!-- changing images -->
+    <!-- <script>
+        const imageUrls = ["img1.jpg", "img2.jpg", "img3.jpg", "img4.jpg", "img5.jpg"];
+        const interval = 3000;
+        let currentIndex= 0;
+
+        function changeImage() {
+            const imgElement = document.getElementById("changingImage");
+            imgElement.style.opacity = 0;
+            setTimeout(() => {
+                imgElement.src = imageUrls[currentIndex];
+                currentIndex = (currentIndex + 1) % imageUrls.length;
+                imgElement.style.opacity = 1; 
+            }, 500); 
+        }
+
+        setInterval(changeImage, interval);
+    </script> -->
+
+    <script src="srcipt.js"></script>
+</body>
+
+</html>
